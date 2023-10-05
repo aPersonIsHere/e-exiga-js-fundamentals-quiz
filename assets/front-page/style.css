@@ -1,137 +1,70 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+  background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+header, section {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+header * {
+  display: flex;
+  flex: 1;
+  align-content: space-between;
+  margin-left: 20vh;
+  margin-right: 20vh;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+section {
+  flex-direction: column;
+  margin-top: 8vh;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+li {
+  display: flex;
+  text-align: left;
+  font-weight: bold;
 }
 
-.card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+#button-start {
+    /*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button Taken as reference for the buttons.*/ 
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+    background-color: #ebdede;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(34, 9, 92);
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+#button-start:hover {
+  background-color: #6d06f5;
 }
 
-.card-body {
-  min-height: 100px;
+a {
+  background-color: #ebdede;
+  text-decoration: none;
 }
 
-.card-footer {
-  text-align: center;
+a:hover {
+  background-color: #d1bebe;
 }
 
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-.btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
-}
-
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
-}
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-}
-
-@media (max-width: 690px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-  }
-
-  #password {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
-  }
+#main-title {
+  font-size: 150%;
+  margin-top: 4%;
 }
